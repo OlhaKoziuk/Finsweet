@@ -1,0 +1,63 @@
+.logo-component {
+  width: 86%;
+  margin: 0 auto;
+  padding: 96px 0;
+  @include flex-between;
+
+  @media screen and (max-width: $breakpoint-l) {
+    padding: 20px 0;
+  }
+
+  &__content {
+    width: 15%;
+    height: 100%;
+    @include flex-column-between;
+    @media screen and (max-width: $breakpoint-xl) {
+      width: 24%;
+    }
+    @media screen and (max-width: $breakpoint-s) {
+      width: 40%;
+    }
+  }
+  &__content > p {
+    font-size: 0.87em;
+    line-height: 1.42;
+    color: $medium-grey-color;
+  }
+  &__content > h4 {
+    color: $medium-grey-color;
+  }
+  &__wrapper {
+    width: 80%;
+    height: 100%;
+    @include flex-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: $breakpoint-xl) {
+      width: 74%;
+    }
+    @media screen and (max-width: $breakpoint-s) {
+      width: 58%;
+    }
+  }
+  &__wrapper > img {
+    width: 13.4%;
+    @media screen and (max-width: $breakpoint-s) {
+      width: 28%;
+      height: 30%;
+    }
+  }
+  &__wrapper > img:first-child {
+    width: 15.7%;
+    @media screen and (max-width: $breakpoint-s) {
+      width: 30%;
+      height: 30%;
+    }
+  }
+  &__wrapper > img:nth-child(4) {
+    width: 15%;
+    @media screen and (max-width: $breakpoint-s) {
+      width: 30%;
+      height: 30%;
+    }
+  }
+}

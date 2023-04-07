@@ -1,0 +1,72 @@
+.posts {
+  width: 95%;
+  padding-top: 128px;
+  padding-left: 108px;
+  @include flex-between;
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+  &__future-post {
+    width: 58%;
+    height: 100%;
+    @include flex-column-between;
+    @media screen and (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+  }
+  &__future-post > article {
+    height: 90%;
+    padding: 32px;
+    @include flex-column-between;
+    @media screen and (max-width: $breakpoint-md) {
+      height: 100%;
+      padding: 20px;
+    }
+  }
+  &__future-post > img {
+    width: 91%;
+    height: 48%;
+    @media screen and (max-width: $breakpoint-md) {
+      height: 40%;
+    }
+  }
+  &__all-posts {
+    width: 41%;
+    height: 100%;
+    @include flex-column-between;
+    position: relative;
+    @media screen and (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+  }
+  &__all-posts a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $purple-color;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+}
+.subtitle > span {
+  color: $purple-color;
+}
+.little-article {
+  height: 22.5%;
+  padding: 32px 32px 25px;
+  display: flex;
+  @include flex-column-between;
+}
+.little-article h4 {
+  width: 71%;
+  @media screen and (max-width: $breakpoint-xl) {
+    width: 100%;
+  }
+}
+.little-article:hover,
+.little-article:focus {
+  background-color: $ligth-yellow;
+  transition: 0.5s;
+}

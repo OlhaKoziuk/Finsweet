@@ -1,0 +1,60 @@
+.mission {
+  padding: 128px 80px;
+  @include flex-column-between;
+  align-items: flex-end;
+  @media screen and (max-width: $breakpoint-xl) {
+    padding: 40px;
+  }
+  &__content {
+    width: 100%;
+    height: 95%;
+    background-color: $bcg-color;
+  }
+
+  & > img {
+    width: 82%;
+    height: 5%;
+  }
+}
+.articles {
+  padding: 96px 108px 0 80px;
+  @include flex-between;
+  align-items: flex-start;
+  @media screen and (max-width: $breakpoint-xl) {
+    padding: 40px;
+    @media screen and (max-width: $breakpoint-s) {
+      padding: 20px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+  & &__item:last-child {
+    height: 61%;
+    @media screen and (max-width: $breakpoint-md) {
+      height: 40%;
+    }
+  }
+
+  &__item {
+    width: 47%;
+    height: 76%;
+    @include flex-column-between;
+
+    @media screen and (max-width: $breakpoint-md) {
+      width: 100%;
+      height: 50%;
+    }
+  }
+
+  &__item .h2-title {
+    width: 95%;
+  }
+  &__item a {
+    font-family: "Sen";
+    font-size: 1.12em;
+    line-height: 1.7;
+    color: $purple-color;
+  }
+}

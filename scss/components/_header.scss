@@ -1,0 +1,44 @@
+.header {
+  height: 80px;
+  background-color: $primary-color;
+  padding: 0 5em;
+  @include flex-between;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0 1em;
+    @media screen and (max-width: $breakpoint-mob) {
+      height: 50px;
+    }
+  }
+
+  &__item {
+    width: 40%;
+    @include flex-between;
+    @media screen and (max-width: $breakpoint-xxl) {
+      width: 70%;
+    }
+    @media screen and (max-width: $breakpoint-md) {
+      width: 85%;
+    }
+    @media screen and (max-width: $breakpoint-s) {
+      width: 20%;
+    }
+  }
+  &__item a {
+    color: $light-color;
+    font-size: inherit;
+    line-height: 1.75;
+  }
+}
+.header > img {
+  width: 11%;
+  @media screen and (max-width: $breakpoint-s) {
+    width: 20%;
+  }
+}
+.nav {
+  width: 53%;
+  @include flex-between;
+  @media screen and (max-width: $breakpoint-s) {
+    display: none;
+  }
+}

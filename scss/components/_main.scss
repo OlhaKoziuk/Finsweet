@@ -1,0 +1,24 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 720px 932px 779px 324px 961px 420px 244px 464px 512px;
+
+  @media screen and (max-width: $breakpoint-xl) {
+    grid-template-rows: 600px 930px 600px 324px 961px 400px 244px 464px 512px;
+  }
+
+  @media screen and (max-width: $breakpoint-l) {
+    grid-template-rows: 600px 930px 600px 500px 800px 800px 92px 400px 300px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    grid-template-rows: 550px 1400px 600px 500px 700px 700px 92px 600px 300px;
+  }
+  @media screen and (max-width: $breakpoint-s) {
+    grid-template-rows: 550px 1400px 700px 800px 450px 1800px 92px 650px 300px;
+  }
+
+  @media screen and (max-width: $breakpoint-mob) {
+    grid-template-rows: 500px 1300px 600px 680px 450px 1500px 92px 650px 350px;
+  }
+}

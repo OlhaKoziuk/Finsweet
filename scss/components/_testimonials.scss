@@ -1,0 +1,106 @@
+.testimonials {
+  width: 89%;
+  margin: 0 auto;
+  padding: 80px 112px 0;
+  background-color: $ligth-yellow;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: $breakpoint-xl) {
+    padding: 40px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  &__border {
+    width: 37%;
+    height: 81%;
+    display: flex;
+    border-right: 1px solid $medium-grey-color;
+    @media screen and (max-width: $breakpoint-md) {
+      width: 100%;
+      height: 45%;
+      border-right: none;
+      border-bottom: 1px solid $medium-grey-color;
+    }
+  }
+  &__heading {
+    width: 81%;
+    height: 64%;
+    @include flex-column-between;
+    @media screen and (max-width: $breakpoint-xl) {
+      height: 90%;
+    }
+    @media screen and (max-width: $breakpoint-md) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__heading p:last-child {
+    line-height: 1.75;
+  }
+  &__item {
+    width: 50%;
+    height: 80%;
+    @include flex-column-between;
+    @media screen and (max-width: $breakpoint-md) {
+      width: 100%;
+      height: 55%;
+    }
+  }
+  &__item > h4 {
+    width: 88%;
+    height: 42%;
+    @media screen and (max-width: $breakpoint-s) {
+      width: 100%;
+      height: 60%;
+    }
+  }
+}
+.profile {
+  width: 100%;
+  height: 20.5%;
+  @include flex-between;
+  @media screen and (max-width: $breakpoint-s) {
+    height: 40%;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__item {
+    width: 75%;
+    @include flex-between;
+    @media screen and (max-width: $breakpoint-s) {
+      width: 80%;
+    }
+  }
+  &__item > img {
+    width: 18%;
+    height: 77%;
+    align-self: center;
+  }
+  &__item div:nth-child(2) {
+    width: 78%;
+    @include flex-column-between;
+  }
+  &__item h4 {
+    @media screen and (max-width: $breakpoint-l) {
+      font-size: 1.2em;
+    }
+  }
+  &__buttons {
+    width: 25%;
+    @include flex-between;
+    &--white-button {
+      width: 36%;
+      height: 77%;
+    }
+    &--black-button {
+      width: 47%;
+      height: 100%;
+    }
+    @media screen and (max-width: $breakpoint-s) {
+      width: 45%;
+    }
+  }
+}

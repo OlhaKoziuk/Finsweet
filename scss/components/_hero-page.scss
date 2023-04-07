@@ -1,0 +1,76 @@
+.hero-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/man-in-black-suit.png);
+  @media screen and (max-width: $breakpoint-s) {
+    background-position: center;
+  }
+}
+.gradient-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/Overlay.png);
+}
+.hero-page {
+  width: 62%;
+  height: 74%;
+  padding-left: 80px;
+  padding-top: 128px;
+  color: $light-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (max-width: $breakpoint-l) {
+    padding-top: 60px;
+    width: 100%;
+    height: 90%;
+  }
+  @media screen and (max-width: $breakpoint-s) {
+    padding-left: 20px;
+  }
+  &--first {
+    height: 56%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &--second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+  }
+  &__subtitle {
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-family: "Sen", sans-serif;
+    font-size: 3.5em;
+    line-height: 1.14;
+    letter-spacing: -2px;
+    @media screen and (max-width: $breakpoint-xxl) {
+      font-size: 3em;
+    }
+    @media screen and (max-width: $breakpoint-s) {
+      font-size: 2em;
+    }
+  }
+  &__text {
+    font-family: inherit;
+    font-size: inherit;
+    width: 75%;
+    line-height: 2;
+    @media screen and (max-width: $breakpoint-s) {
+      line-height: 1.2;
+    }
+  }
+  &__text > span {
+    color: $yellow-color;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+}

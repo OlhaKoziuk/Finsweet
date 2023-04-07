@@ -1,0 +1,69 @@
+.h2-title {
+  font-family: "Sen";
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  @media screen and (max-width: $breakpoint-xl) {
+    font-size: 2em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.h3-title {
+  font-family: "Sen";
+  font-size: 1.75em;
+  font-weight: 700;
+  line-height: 1.42;
+  letter-spacing: -1px;
+  @media screen and (max-width: $breakpoint-xl) {
+    font-size: 1.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.h4-title {
+  font-family: "Sen";
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.33;
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 1.3em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.subtitle {
+  font-family: inherit;
+  color: $dark-grey-color;
+  font-size: 0.88em;
+  font-weight: 500;
+  line-height: 1.43;
+}
+.uppercase-subtitle {
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.text {
+  line-height: 1.75;
+  color: $medium-grey-color;
+  @media screen and (max-width: $breakpoint-md) {
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

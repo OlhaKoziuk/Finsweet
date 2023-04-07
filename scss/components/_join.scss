@@ -1,0 +1,20 @@
+.join {
+  width: 29%;
+  margin: 128px auto;
+  @include flex-column-between;
+  align-items: center;
+  @media screen and (max-width: $breakpoint-l) {
+    width: 60%;
+    margin: 50px auto;
+  }
+}
+.join > h2,
+.join > p {
+  text-align: center;
+}
+.join > button {
+  width: 174px;
+  @media screen and (max-width: $breakpoint-l) {
+    width: fit-content;
+  }
+}

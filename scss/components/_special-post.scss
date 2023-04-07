@@ -1,0 +1,56 @@
+.special-post {
+  width: 89%;
+  margin: 128px auto;
+  background-image: url(../images/sea-and-people.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 74% 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  @media screen and (max-width: $breakpoint-l) {
+    background-size: 100% 100%;
+    margin: 50px auto;
+    @media screen and (max-width: $breakpoint-s) {
+      margin: 20px auto;
+    }
+  }
+  &__content {
+    width: 55%;
+    height: 83%;
+    background-color: $light-color;
+    padding: 80px;
+    @include flex-column-between;
+    @media screen and (max-width: $breakpoint-xl) {
+      padding: 40px;
+    }
+    @media screen and (max-width: $breakpoint-s) {
+      padding: 20px;
+      width: 70%;
+    }
+  }
+  &__content > h2 {
+    font-family: "Sen";
+    font-size: 3em;
+    line-height: 1.33;
+    letter-spacing: -2px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 2em;
+    }
+    @media screen and (max-width: $breakpoint-s) {
+      font-size: 1.5em;
+    }
+  }
+
+  &__content > button {
+    width: 269px;
+    @media screen and (max-width: $breakpoint-xl) {
+      width: fit-content;
+    }
+  }
+}
